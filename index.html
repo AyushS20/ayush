@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f49ea26647.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst, Musician, Photographer</p>
+                <h1>Hi, I'm <span>Ayush</span> Sharma</h1>
+            </div>
+        </div>
+    </header>
+
+    <!------------------About------------------->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate Data Analyst with a background in Statistics, skilled in Python, R, and SPSS. Also a musician and photographer, I blend analytical skills with creativity to deliver unique insights and solutions.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Proficient in Python, R, SPSS, SQL, and data visualization.</li>
+                            <li><span>Music</span><br>Experienced in leading music societies, event coordination, and performance.</li>
+                            <li><span>Photography and Film Making</span><br>Skilled in photography, videography, and multimedia content creation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Vice-President, Shivranjani, The Music Society of Ramanujan College</span><br>Directed a club of over 70 members, orchestrating 10+ events and numerous workshops.</li>
+                            <li><span>Media Head, Shivranjani, The Music Society of Ramanujan College</span><br>Increased club visibility by 297% in social engagement through consistent research and regular content.</li>
+                            <li><span>Event Coordinator, Encephal, The Statistics Society of Ramanujan College</span><br>Effectively executed 5+ events, enhancing engagement and attendance.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor's of Science (Honours) in Statistics, University of Delhi</span><br>GPA: 7.79/10 | Dissertation: Principal Component Analysis and Time Series Forecasting of Groundwater Contamination in North India.</li>
+                            <li><span>Senior Secondary, Royal Oak International School</span><br>Physics, Chemistry, Biology & Mathematics: 92.3%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------Services--------------------->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Expert in analyzing complex data sets and deriving actionable insights.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Science</h2>
+                    <p>Skilled in machine learning, predictive modeling, and statistical analysis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Engineering</h2>
+                    <p>Proficient in building and optimizing data pipelines and architectures.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------Portfolio----------------->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Dissertation</h3>
+                        <p>Principal Component Analysis and Time Series Forecasting of Groundwater Contamination in North India.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work1.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Sales Analysis & Demand Forecasting</h3>
+                        <p>Analysis of Walmart sales data over 4 months to forecast demand and optimize inventory.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work1.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Music Hits Analysis</h3>
+                        <p>Data science project analyzing factors that contribute to a song becoming a hit.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-------------------Contact---------------->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> statistics.ayush@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 98181 93037</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ayush Sharma Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Ayush Sharma 2024</p>
+        </div>
+    </section>
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjRcZgxRosBDF5Gxo7cZDWEZZ11FAxK5q4X2dTZfCZGhrmm5FR0Co9-wvbxVj7uhyD/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(() => { msg.innerHTML = ""; }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
